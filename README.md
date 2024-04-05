@@ -4,10 +4,10 @@ Create, manage and load screenshots. This extension was made for Makecode for Mi
 
 ## Blocks
 
- •Save screenshot: save the Microbit's screen's current state.
+ •**Save screenshot**: save the Microbit's screen's current state.
  
- •Load screenshot: load the saved screenshot.
+ •**Load screenshot**: load the saved screenshot.
  
- •Invert screenshot: Inverts the screenshot
+ •**Invert screenshot**: Inverts the screenshot
  
- •Rotate screenshot: Rotates the screenshot clockwise/counterclockwise.
+ •**Rotate screenshot**: Rotates the screenshot clockwise/counterclockwise.
