@@ -1,7 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="fo9jTv)+Do@snQr+F6?#" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="D):F4=RN]eqX9C!1d`_6"><field name="LEDS">`
-        . # . # . 
-        # # # # # 
-        # # # # # 
-        . # # # . 
-        . . # . .
-        `</field><next><block type="SaveScreenshot" id="Mi;I=yUoJ?`5G^*n6CLk"><next><block type="SetUOEC" id="d(V5;N+x^@di`MbV)diy"><value name="c"><shadow type="logic_boolean" id=";uuX(@/GhOayOkJoH1mF"><field name="BOOL">TRUE</field></shadow></value></block></next></block></next></block></statement></block><block type="every_interval" id="(-|L3Mcl7X0opA?uwG@d" x="-6" y="461"><value name="interval"><shadow type="longTimePicker" id="^Mb)^.3Fu*9Os/5LiViB"><field name="ms">500</field></shadow></value><statement name="HANDLER"><block type="Rotate" id="-l5.sqrcTc{Z$A%3?c)j"><value name="c"><shadow type="logic_boolean" id="T6M4vBPqWYEl-(g|T};@"><field name="BOOL">FALSE</field></shadow></value></block></statement></block><block type="device_button_event" id="a^(U6,@?2H9c2:[Sv]8u" x="-9" y="661"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="Invert" id="|iQt,L6v4}E2RNeaGyUt"></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"></xml>
