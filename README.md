@@ -11,3 +11,4 @@ Create, manage and load screenshots. This extension was made for Makecode for Mi
  •**Invert screenshot**: Inverts the screenshot
  
  •**Rotate screenshot**: Rotates the screenshot clockwise/counterclockwise.
+

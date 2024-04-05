@@ -1,5 +1,5 @@
 //% color=159 weight=100 icon="\uf030" block="Screenshot"
-namespace Screenshot {
+namespace screenshot {
     //Makes an screenshot of the screen, Modifies it and Loads it
     let screen = [false]
     //UOEC = Update On Every Change
@@ -7,17 +7,17 @@ namespace Screenshot {
     function floor(num: number) {
         return num - (num % 1)
     }
-    //% blockId=SaveScreenshot
-    //% block="Save Screenshot"
-    export function Save() {
+    //% blockId=saveScreenshot
+    //% block="save screenshot"
+    export function save() {
         screen = []
         for (let i = 0; i <= 24; i++){
             screen.push (led.point(i % 5, floor(i / 5)))
         }
     }
     //% blockId=LoadScreenshot
-    //% block="Load Screenshot"
-    export function Load() {
+    //% block="load screenshot"
+    export function load() {
         basic.clearScreen()
         for (let i = 0; i <= 24; i++) {
             if (screen[i] != false) {
@@ -26,19 +26,19 @@ namespace Screenshot {
         }
     }
     //% blockId=Invert
-    //% block="Invert Screenshot"
-    export function Invert() {
+    //% block="invert screenshot"
+    export function invert() {
         for (let i = 0; i <= 24; i++) {
             screen[i] = !screen[i]
         }
         if (UOECb) {
-            Load()
+            load()
         }
     }
     //% blockId=Rotate
-    //% block="Rotate Screenshot: Counterclockwise $c"
+    //% block="rotate screenshot: counterclockwise $c"
     //% c.defl=false
-    export function Rotate(c: boolean) {
+    export function rotate(c: boolean) {
         let rotindex = [5, 10, 15, 20, 25, 4, 9, 14, 19, 24, 3, 8, 13, 18, 23, 2, 7, 12, 17, 22, 1, 6, 11, 16, 21]
         let temp = screen
         let temp2 = [false]; temp2 = []
@@ -48,18 +48,18 @@ namespace Screenshot {
             }
             screen = temp2
             if (UOECb) {
-                Load()
+                load()
             }
         } else {
-            Rotate (true)
-            Rotate (true)
-            Rotate (true)
+            rotate (true)
+            rotate (true)
+            rotate (true)
         }
     }
     //% blockId=SetUOEC
-    //% block="Update On Every Change $c"
+    //% block="update on every change $c"
     //% c.defl=true
-    export function SetUOEC (c: boolean) {
+    export function setUOEC (c: boolean) {
         UOECb = c
     }
 }
