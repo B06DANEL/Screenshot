@@ -1,20 +1,14 @@
 {
     "name": "Screenshot",
-    "description": "",
+    "description": "Create, manage and load screenshots",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
         "README.md",
         "Screenshot.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "6.0.26",
         "targetId": "microbit"
